@@ -17,7 +17,8 @@ app.use(cors({
   origin: [
     'http://localhost:3000',
     'http://localhost:3001',
-    'http://localhost:5173' // Vite default port
+    'http://localhost:5173',
+    'https://halifax-offshore.netlify.app/'
   ],
   credentials: true
 }));
