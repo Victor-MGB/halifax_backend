@@ -48,11 +48,11 @@ const seed = async () => {
 
   // Welcome notifications
   for (const u of users) {
-    await Notification.create({ user: u._id, title: '🎉 Welcome to Nexus Bank!', message: 'Your account has been created. Explore your dashboard.', type: 'success' });
+    await Notification.create({ user: u._id, title: ' Welcome to Nexus Bank!', message: 'Your account has been created. Explore your dashboard.', type: 'success' });
   }
 
-  console.log('✅ Admin: admin@nexusbank.com / admin123');
-  console.log('✅ Users: alice@example.com, bob@example.com, carol@example.com / password123');
+  console.log('Admin: admin@nexusbank.com / admin123');
+  console.log(' Users: alice@example.com, bob@example.com, carol@example.com / password123');
   process.exit(0);
 };
 
