@@ -17,7 +17,6 @@ const seed = async () => {
   await WithdrawalRequest.deleteMany({});
   console.log('Cleared data.');
 
-  const admin = await User.create({ firstName: 'Admin', lastName: 'User', email: 'admin@nexusbank.com', password: 'admin123', role: 'admin' });
 
   const users = await User.create([
     { firstName: 'Alice', lastName: 'Johnson', email: 'alice@example.com', password: 'password123' },
@@ -51,7 +50,6 @@ const seed = async () => {
     await Notification.create({ user: u._id, title: ' Welcome to Nexus Bank!', message: 'Your account has been created. Explore your dashboard.', type: 'success' });
   }
 
-  console.log('Admin: admin@nexusbank.com / admin123');
   console.log(' Users: alice@example.com, bob@example.com, carol@example.com / password123');
   process.exit(0);
 };

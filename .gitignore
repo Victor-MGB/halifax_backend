@@ -123,3 +123,4 @@ __pycache__/
 
 # Optional: Keep example env file (create this file if you want to share template)
 !.env.example
+.seed.js
