@@ -1,0 +1,125 @@
+# Dependencies (prevents uploading huge node_modules folders)
+**/node_modules
+**/package-lock.json
+**/yarn.lock
+**/pnpm-lock.yaml
+
+# Environment Variables (CRITICAL - protects secrets)
+**/.env
+**/.env.local
+**/.env.development
+**/.env.production
+**/.env.test
+!.env.example
+
+# Build outputs (generated files that can be rebuilt)
+**/dist
+**/build
+**/.next
+**/out
+**/.cache
+
+# Logs
+**/*.log
+**/logs
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Testing & Coverage
+**/coverage
+**/.nyc_output
+**/.jest
+**/test-results
+
+# Debugging
+**/debug.log
+**/.debug
+
+# Runtime data
+**/pids
+**/*.pid
+**/.seed
+**/runtime
+
+# Misc
+**/.DS_Store
+**/.npm
+**/.eslintcache
+**/.prettiercache
+
+# Backup files
+*.bak
+*.tmp
+*.temp
+
+# Environment specific
+.env.*.local
+.env.backup
+*.pem
+
+# Database
+*.sqlite
+*.db
+*.mongodb
+
+# Uploads (if your app handles file uploads)
+**/uploads
+**/temp
+
+# Production specific
+**/dist
+**/build.zip
+
+# Railway specific
+.railway/
+
+# Render specific
+.render/
+
+# Vercel specific
+.vercel/
+
+# Netlify specific
+.netlify/
+
+# MongoDB specific
+dump/
+mongodump/
+
+# PM2 (process manager)
+**/pm2.json
+.pm2/
+
+# Certificates
+*.crt
+*.key
+*.pem
+
+# Python (if any)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Optional: Keep example env file (create this file if you want to share template)
+!.env.example
