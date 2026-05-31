@@ -146,7 +146,7 @@ app.get('/api/health/stats', async (_, res) => {
       success: true,
       timestamp: new Date().toISOString(),
       platform: {
-        name: 'Nexus Private Bank',
+        name: 'Halifax Offshore Private Bank',
         version: '1.0.0'
       },
       statistics: {
