@@ -18,7 +18,7 @@ app.use(cors({
     'http://localhost:3000',
     'http://localhost:3001',
     'http://localhost:5173',
-    'https://halifax-offshore.netlify.app/'
+    'https://halifax-offshore.netlify.app'
   ],
   credentials: true
 }));
