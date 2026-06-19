@@ -10,6 +10,7 @@ const Account = require('./models/Account');
 const Transaction = require('./models/Transaction');
 const WithdrawalRequest = require('./models/WithdrawalRequest');
 const Notification = require('./models/Notification');
+const contactRoutes = require('./routes/contact');
 
 const app = express();
 
@@ -36,6 +37,7 @@ app.use('/api/transactions', require('./routes/transactions'));
 app.use('/api/withdrawals',  require('./routes/withdrawals'));
 app.use('/api/notifications',require('./routes/notifications'));
 app.use('/api/admin',        require('./routes/admin'));
+app.use('/api/contact', require('./routes/contact'));
 
 app.get('/api/health', (_, res) => res.json({ status: 'OK' }));
 
